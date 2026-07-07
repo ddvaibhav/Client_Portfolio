@@ -36,8 +36,8 @@ This project implements a unique **"Midnight Liquid Glass"** aesthetic, focusing
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/maruf-pfc/niloy-bhowmick.git
-    cd niloy-bhowmick
+    git clone https://github.com/maruf-pfc/sarang-bhavar.git
+    cd sarang-bhavar
     ```
 
 2.  **Install dependencies**
@@ -103,7 +103,7 @@ pnpm run test:watch
 ## 📂 Project Structure
 
 ```plaintext
-📦niloy-bhowmick
+📦sarang-bhavar
  ┣ 📂public
  ┃ ┣ 📂companies
  ┃ ┣ 📂project-images
@@ -178,7 +178,7 @@ To add a new project, simply edit `src/lib/data.ts`. No new code required!
 
 ```typescript
 export const videoProjectsData = {
-  "Talking Head": [
+  "Long Videos": [
     {
       id: "unique-video-id",
       video_title: "Your Video Title",
@@ -191,7 +191,7 @@ export const videoProjectsData = {
       client_feedback: "Client testimonial...",
       video_link: "https://youtu.be/video-id",
       project_images: ["/path/to/image1.jpg"],
-      category: "Talking Head",
+      category: "Long Videos",
       duration: "5:30",
       software_used: ["DaVinci Resolve", "After Effects"],
     },
@@ -213,7 +213,7 @@ export const videoProjectsData = {
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=maruf-pfc/niloy-bhowmick&type=Date)](https://star-history.com/#maruf-pfc/niloy-bhowmick&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=maruf-pfc/sarang-bhavar&type=Date)](https://star-history.com/#maruf-pfc/sarang-bhavar&Date)
 
 </div>
 # Client_Porfolio
