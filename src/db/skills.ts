@@ -11,14 +11,14 @@ import {
 } from "lucide-react";
 
 export const videoEditingSkills = [
-  {
-    name: "DaVinci Resolve",
-    image_link: "/tools/DaVinci_Resolve_Studio.png",
-    icon: Film,
-    description:
-      "Professional color grading, editing, and audio post-production",
-    color: "text-orange-400",
-  },
+  // {
+  //   name: "DaVinci Resolve",
+  //   image_link: "/tools/DaVinci_Resolve_Studio.png",
+  //   icon: Film,
+  //   description:
+  //     "Professional color grading, editing, and audio post-production",
+  //   color: "text-orange-400",
+  // },
   {
     name: "Adobe Premiere Pro",
     image_link: "/tools/Adobe_Premiere_Pro_CC.png",
@@ -140,7 +140,7 @@ export const achievements = [
     color: "text-green-400",
   },
   {
-    title: "1+ Year Experience",
+    title: "3 Year Experience",
     description:
       "Professional hands-on experience in video editing with continuous skill development",
     icon: Camera,

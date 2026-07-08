@@ -61,10 +61,16 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
+                title: "AI Video Creation",
+                description: "Cutting-edge AI-powered video content creation.",
+                icon: "🤖",
+              },
+              {
                 title: "YouTube Editing",
                 description: "Engaging edits optimized for retention with perfect pacing.",
                 icon: "🎬",
               },
+              
               {
                 title: "Course Content",
                 description: "Clear, educational content with professional polish.",
@@ -85,11 +91,11 @@ export default function HomePage() {
                 description: "Professional branding elements that stand out.",
                 icon: "🏷️",
               },
-              {
-                title: "Audio Engineering",
-                description: "Crystal clear audio mix with noise reduction.",
-                icon: "🎵",
-              },
+              // {
+              //   title: "Audio Engineering",
+              //   description: "Crystal clear audio mix with noise reduction.",
+              //   icon: "🎵",
+              // },
             ].map((service, index) => (
               <div key={service.title} className="h-full">
                 <GlassmorphismCard className="p-8 h-full flex flex-col items-center text-center group hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300">
