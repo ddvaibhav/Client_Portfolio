@@ -285,7 +285,8 @@ export const allVideoProjects: VideoProject[] = [
     id: "AIContent05",
     video_title: "Cinematic Pulse  🎬",
 
-    video_description
+    video_description:
+      "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
     tags: ["AI Content"],
     cover_image: "/project-images/Ai-thamnail.png",
     publish_date: "2025-07-09",
@@ -303,9 +304,10 @@ export const allVideoProjects: VideoProject[] = [
   },
 
   {
-    id: "AIContent06"
+    id: "AIContent06",
     video_title: "Flash Frame  ⚡",
-    video_description: "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
+    video_description:
+      "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
     tags: ["AI Content"],
     cover_image: "/project-images/Ai-thamnail.png",
     publish_date: "2025-07-09",
@@ -323,9 +325,10 @@ export const allVideoProjects: VideoProject[] = [
   },
 
   {
-    id: "AIContent07"
+    id: "AIContent07",
     video_title: "Vivid Voiceover  🗣️",
-    video_description: "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
+    video_description:
+      "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
     tags: ["AI Content"],
     cover_image: "/project-images/Ai-thamnail.png",
     publish_date: "2025-07-09",
@@ -341,6 +344,7 @@ export const allVideoProjects: VideoProject[] = [
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
   },
+
 
   {
     id: "GraphicsDesign01",

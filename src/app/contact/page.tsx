@@ -321,8 +321,9 @@ export default function ContactPage() {
                     className="w-full bg-white/[0.03] border border-white/10 text-white rounded-xl px-4 py-3 h-12 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500/50 transition-all custom-select"
                   >
                     <option value="" className="bg-gray-900 text-gray-400">Select project type</option>
-                    <option value="youtube" className="bg-gray-900">AI Video</option>
+                    <option value="ai-videos" className="bg-gray-900">AI Videos</option>
                     <option value="youtube" className="bg-gray-900">YouTube Video</option>
+
                     <option value="social-media" className="bg-gray-900">Social Media Content</option>
                     <option value="promo" className="bg-gray-900">Promotional Video</option>
                     <option value="tutorial" className="bg-gray-900">Tutorial/Course</option>
