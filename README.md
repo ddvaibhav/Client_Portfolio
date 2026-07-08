@@ -1,4 +1,4 @@
-# Niloy Bhowmick
+# Sarang-Bhavar
 
 <div align="center">
 
@@ -88,8 +88,7 @@ pnpm run test:watch
 2.  Connect repository to Vercel.
 3.  Add environment variables in Vercel dashboard:
     ```env
-    RESEND_API_KEY=your_production_resend_key
-    NEXT_PUBLIC_SITE_URL=https://www.itsniloy.me
+
     ```
 4.  Deploy automatically.
 
@@ -109,7 +108,7 @@ pnpm run test:watch
  ┃ ┣ 📜demo.png
  ┃ ┣ 📜logo-transparent.png
  ┃ ┣ 📜logo-white.png
- ┃ ┣ 📜niloybhowmick.png
+ ┃ ┣ 📜Sarangbhowmick.png
  ┃ ┗ 📜not-found.jpg
  ┣ 📂src
  ┃ ┣ 📂app
@@ -169,55 +168,3 @@ pnpm run test:watch
  ┣ 📜tsconfig.json
  ┗ 📜vitest.config.ts
 ```
-
-### 📝 Adding New Video Projects
-
-To add a new project, simply edit `src/lib/data.ts`. No new code required!
-
-```typescript
-export const videoProjectsData = {
-  "Long Videos": [
-    {
-      id: "unique-video-id",
-      video_title: "Your Video Title",
-      video_description: "Detailed description...",
-      tags: ["Tag1", "Tag2"],
-      cover_image: "youtube-video-id",
-      publish_date: "2024-01-01",
-      client_name: "Client Name",
-      client_image: "/companies/client-logo.png",
-      client_feedback: "Client testimonial...",
-      video_link: "https://youtu.be/video-id",
-      project_images: ["/path/to/image1.jpg"],
-      category: "Long Videos",
-      duration: "5:30",
-      software_used: ["DaVinci Resolve", "After Effects"],
-    },
-  ],
-};
-```
-
-## 🛠️ Tech Stack
-
--   **Core**: Next.js 15, TypeScript
--   **Styling**: Tailwind CSS, Shadcn/ui
--   **Animation**: Framer Motion
--   **Backend**: Resend (Email), Server Actions
--   **Testing**: Vitest (Unit testing)
-
----
-
-<div align="center">
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=maruf-pfc/sarang-bhavar&type=Date)](https://star-history.com/#maruf-pfc/sarang-bhavar&Date)
-
-</div>
-# Client_Porfolio
-# Client_Porfolio
-# Client_Portfolio
-# Client_Portfolio
-# Client_Portfolio
-# Client_Sarang
-# client_portfo
