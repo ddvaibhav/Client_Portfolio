@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Project Banner](./public/demo.png)
+![Project Banner](/public/demo.png)
 
 ### Midnight Liquid Glass Portfolio
 *A premium, responsive video editing portfolio built with modern web technologies.*
