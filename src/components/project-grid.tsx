@@ -32,10 +32,13 @@ export default function ProjectGrid({ initialCategories, initialProjects }: Proj
         projects = getVideoProjectsByCategory(selectedCategory);
     }
     
-    setAllProjects(projects);
-    setDisplayedProjects(projects.slice(0, ITEMS_PER_PAGE));
-    setCurrentPage(1);
-    setHasMore(projects.length > ITEMS_PER_PAGE);
+    // Avoid cascaded renders by batching state updates.
+    queueMicrotask(() => {
+      setAllProjects(projects);
+      setDisplayedProjects(projects.slice(0, ITEMS_PER_PAGE));
+      setCurrentPage(1);
+      setHasMore(projects.length > ITEMS_PER_PAGE);
+    });
   }, [selectedCategory, initialProjects]);
 
   // Load more projects

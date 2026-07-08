@@ -36,7 +36,9 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
     const [showImageLightbox, setShowImageLightbox] = useState(false);
     const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-    const videoSrc = project.video_path || null;
+    const videoSrc = project.video_link || project.video_path || null;
+
+
 
     const isGraphicsOrYouTubeThumbnails = project.category.some(
         (cat) =>
@@ -144,14 +146,17 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                             <div className="aspect-video relative rounded-lg overflow-hidden bg-gray-900">
                                 {showVideo && videoSrc ? (
                                     <video
-                                        src={videoSrc}
-                                        title={project.video_title}
-                                        className="w-full h-full"
                                         controls
                                         autoPlay
                                         playsInline
                                         preload="metadata"
-                                    />
+                                        title={project.video_title}
+                                        className="w-full h-full"
+                                    >
+                                        {videoSrc ? (
+                                            <source src={videoSrc} type="video/mp4" />
+                                        ) : null}
+                                    </video>
                                 ) : (
                                     <div className="relative w-full h-full">
                                         <Image

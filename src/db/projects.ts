@@ -1,3 +1,4 @@
+
 import { VideoProject } from "@/types/videos";
 
 // Keep ONLY your current local demo videos.
@@ -14,8 +15,10 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/project-images/Long-Videos-tham.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Long Video 01.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483595/Long_Video_01_upcrb8.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Long Videos"],
     duration: "6:32",
@@ -32,13 +35,16 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/project-images/Long-Videos-tham.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Long Video 02.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483604/Long_Video_02_1_oqvzzo.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Long Videos"],
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
   },
+  
   // {
   //   id: "LongVideo03",
   //   video_title: "Cinematic Story Arc ✨",
@@ -50,18 +56,20 @@ export const allVideoProjects: VideoProject[] = [
   //   client_image: "/project-images/Long-Videos-tham.png",
   //   client_feedback: "",
   //   video_link: "",
-  //   video_path: "/project-videos/Long Video 03.mp4",
+  //   video_path: undefined,
+
   //   project_images: [],
   //   category: ["Long Videos"],
   //   duration: "4:26",
   //   software_used: ["Adobe Premiere Pro"],
   // },
 
-///Graphics Designs
+ //Graphics Designs
 
   {
     id: "ShortFormContent01",
     video_title: "AI Visual Story  🤖",
+
     video_description: "I create high-performing short-form content optimized for platforms like YouTube Shorts, Instagram Reels, and TikTok. By combining fast-paced editing, motion graphics, and trend-driven storytelling, I help brands and creators increase engagement and reach.",
     tags: ["Short Form Content"],
     cover_image: "/project-images/short-form-content.png",
@@ -69,8 +77,9 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Short Form Video 01.mp4",
+    video_link: "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783425451/Short_Form_Video_01_vqpsie.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Short Form Content"],
     duration: "6:32",
@@ -87,8 +96,9 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Short Form Video 02.mp4",
+    video_link: "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783425101/Short_Form_Video_04_n2b5oq.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Short Form Content"],
     duration: "6:32",
@@ -104,8 +114,9 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Short Form Video 03.mp4",
+    video_link: "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783425095/Short_Form_Video_02_qpgg9g.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Short Form Content"],
     duration: "6:32",
@@ -121,8 +132,9 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Short Form Video 04.mp4",
+    video_link: "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783425087/Short_Form_Video_07_vrmpvd.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Short Form Content"],
     duration: "6:32",
@@ -138,8 +150,9 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Short Form Video 05.mp4",
+    video_link: "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783425087/Short_Form_Video_06_jttcvb.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Short Form Content"],
     duration: "6:32",
@@ -155,9 +168,10 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Short Form Video 06.mp4",
+    video_link: "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783425069/Short_Form_Video_05_sc231l.mp4",
+    video_path: undefined,
     project_images: [],
+
     category: ["Short Form Content"],
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
@@ -172,8 +186,9 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/Short Form Video 07.mp4",
+    video_link: "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783425069/Short_Form_Video_03_e689me.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Short Form Content"],
     duration: "6:32",
@@ -183,10 +198,11 @@ export const allVideoProjects: VideoProject[] = [
 
   // AI CONTENTS
 
-
   {
     id: "AIContent01",
+
     video_title: "Neon Narrative: AI Short Cut  🚀",
+
     video_description: "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
     tags: ["AI Content"],
     cover_image: "/project-images/Ai-thamnail.png",
@@ -194,8 +210,10 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/AI_content1.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483607/AI_content1_vmpzej.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Ai Videos"],
     duration: "6:32",
@@ -212,15 +230,17 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/AI_content2.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483185/AI_content2_j6ctsn.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Ai Videos"],
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
   },
 
-   {
+  {
     id: "AIContent03",
     video_title: "Dreamflow Cut  ✨",
 
@@ -231,15 +251,17 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/AI_content3.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483118/AI_content3_jtug4y.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Ai Videos"],
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
   },
 
-   {
+  {
     id: "AIContent04",
     video_title: "Midnight Montage  🌙",
     video_description: "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
@@ -249,15 +271,17 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/AI_content4.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483179/AI_content4_tgsai1.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Ai Videos"],
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
   },
 
-   {
+  {
     id: "AIContent05",
     video_title: "Cinematic Pulse  🎬",
     video_description: "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
@@ -267,15 +291,17 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/AI_content5.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483124/AI_content5_gxy5wh.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Ai Videos"],
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
   },
 
-   {
+  {
     id: "AIContent06",
     video_title: "Flash Frame  ⚡",
     video_description: "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
@@ -285,15 +311,17 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/AI_content6.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483809/AI_content6_nhpqby.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Ai Videos"],
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
   },
 
-   {
+  {
     id: "AIContent07",
     video_title: "Vivid Voiceover  🗣️",
     video_description: "I create AI-powered short videos that combine storytelling, advanced AI tools, and cinematic editing to produce engaging and visually stunning content. From concept development to final delivery, every project is designed to capture attention and maximize audience retention.",
@@ -303,14 +331,15 @@ export const allVideoProjects: VideoProject[] = [
     client_name: "Self",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
-    video_link: "",
-    video_path: "/project-videos/AI_content7.mp4",
+    video_link:
+      "https://res.cloudinary.com/e7pvfh5k/video/upload/v1783483570/AI_content7_h9xtdr.mp4",
+    video_path: undefined,
+
     project_images: [],
     category: ["Ai Videos"],
     duration: "6:32",
     software_used: ["Adobe Premiere Pro"],
   },
-//graphics desings
 
   {
     id: "GraphicsDesign01",

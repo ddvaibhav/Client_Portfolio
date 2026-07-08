@@ -9,30 +9,36 @@ function cn(...classes: (string | boolean | undefined | null)[]): string {
 const useAnimationFrame = (callback: (time: number, delta: number) => void) => {
   const requestRef = useRef<number | null>(null);
   const previousTimeRef = useRef<number | null>(null);
+  const callbackRef = useRef(callback);
 
-  const animate = useCallback(
-    (time: number) => {
-      if (
-        previousTimeRef.current !== null &&
-        previousTimeRef.current !== undefined
-      ) {
-        const delta = time - previousTimeRef.current;
-        callback(time, delta);
-      }
-      previousTimeRef.current = time;
-      requestRef.current = requestAnimationFrame(animate);
-    },
-    [callback]
-  );
+  // Keep the latest callback without re-creating the animation loop.
+  useEffect(() => {
+    callbackRef.current = callback;
+  }, [callback]);
 
   useEffect(() => {
-    requestRef.current = requestAnimationFrame(animate);
-    return () => {
-      if (requestRef.current) {
-        cancelAnimationFrame(requestRef.current);
+    let rafId: number;
+
+    const step = (time: number) => {
+      const prev = previousTimeRef.current;
+      if (prev !== null && prev !== undefined) {
+        const delta = time - prev;
+        callbackRef.current(time, delta);
       }
+
+      previousTimeRef.current = time;
+      rafId = requestAnimationFrame(step);
     };
-  }, [animate]);
+
+    rafId = requestAnimationFrame(step);
+    requestRef.current = rafId;
+
+    return () => {
+      cancelAnimationFrame(rafId);
+    };
+  }, []);
+
+
 };
 
 interface MarqueeProps extends React.ComponentPropsWithoutRef<"div"> {

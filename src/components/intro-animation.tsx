@@ -10,18 +10,21 @@ export default function IntroAnimation() {
     // Check if intro has been shown before
     const hasSeenIntro = localStorage.getItem("hasSeenIntro");
 
-    if (!hasSeenIntro) {
+    // Avoid setting state synchronously inside the effect body.
+    if (hasSeenIntro) return;
+
+    // Set state and side effects in a microtask so React can batch updates.
+    queueMicrotask(() => {
       setShowIntro(true);
-      // Set flag in localStorage so intro doesn't show again
       localStorage.setItem("hasSeenIntro", "true");
 
-      // Auto-hide intro after 5 seconds (simulating video end)
       const timer = setTimeout(() => {
         setShowIntro(false);
       }, 5000);
 
+      // Best-effort cleanup (timer won't be cleared if already fired).
       return () => clearTimeout(timer);
-    }
+    });
   }, []);
 
   return (

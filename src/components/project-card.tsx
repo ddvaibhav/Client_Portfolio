@@ -91,14 +91,20 @@ export default function ProjectCard({ project, backHref }: ProjectCardProps) {
                                         className="absolute inset-0 z-20"
                                     >
                                         <video
-                                            src={project.video_path || undefined}
-                                            title={project.video_title}
-                                            className="w-full h-full"
                                             controls
                                             autoPlay
                                             playsInline
                                             preload="metadata"
-                                        />
+                                            title={project.video_title}
+                                            className="w-full h-full"
+                                        >
+                                            {project.video_link || project.video_path ? (
+                                                <source
+                                                    src={project.video_link || project.video_path}
+                                                    type="video/mp4"
+                                                />
+                                            ) : null}
+                                        </video>
                                         <button
                                             onClick={(e) => {
                                                 e.stopPropagation();

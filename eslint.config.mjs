@@ -1,26 +1,33 @@
-// import { dirname } from "path";
-// import { fileURLToPath } from "url";
-// import { FlatCompat } from "@eslint/eslintrc";
+import nextEslintConfig from "eslint-config-next";
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = dirname(__filename);
+/**
+ * ESLint flat config for Next.js.
+ * eslint-config-next exports an array of flat configs.
+ */
+const nextConfigArray = Array.isArray(nextEslintConfig)
+  ? nextEslintConfig
+  : [nextEslintConfig];
 
-// const compat = new FlatCompat({
-//   baseDirectory: __dirname,
-// });
+export default [
+  ...nextConfigArray,
 
-// const eslintConfig = [
-//   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  // Project-wide ignores (avoid linting build artifacts and deps)
+  {
+    ignores: [
+      "**/.next/**",
+      "**/node_modules/**",
+      "**/out/**",
+      "**/dist/**",
+    ],
+  },
 
-//   {
-//     // Apply to all files
-//     files: ["**/*.{js,ts,jsx,tsx}"],
-//     rules: {
-//       "@typescript-eslint/no-unused-vars": "off",
-//       "@next/next/no-img-element": "off",
-//       "react/no-unescaped-entities": "off", // If you're escaping `'` manually
-//     },
-//   },
-// ];
+  // Local overrides (keep minimal to avoid breaking existing behavior)
+  {
+    rules: {
+      "@next/next/no-img-element": "off",
+      "react/no-unescaped-entities": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+    },
+  },
+];
 
-// export default eslintConfig;
