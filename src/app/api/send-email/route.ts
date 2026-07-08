@@ -2,19 +2,15 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { EmailTemplate } from "@/components/email-template";
 
-
 // Contact form endpoint: sends email via Resend.
 
-
 export async function POST(req: NextRequest) {
-  let body;
+  let body: any;
   try {
     body = await req.json();
   } catch (err) {
-    return NextResponse.json(
-      { error: "Invalid JSON request body" },
-      { status: 400 }
-    );
+    console.error("❌ /api/send-email invalid JSON", err);
+    return NextResponse.json({ error: "Invalid JSON request body" }, { status: 400 });
   }
 
   const { name, email, message, projectType, timeline, honeypot } = body || {};
@@ -22,13 +18,10 @@ export async function POST(req: NextRequest) {
   // Submission time (backend-derived)
   const time = new Date().toISOString();
 
-
   // Honeypot check (bots will fill this hidden field)
   if (honeypot) {
-    return NextResponse.json(
-      { error: "Spam detected" },
-      { status: 400 }
-    );
+    console.warn("⚠️ /api/send-email spam detected (honeypot filled)");
+    return NextResponse.json({ error: "Spam detected" }, { status: 400 });
   }
 
   // Validate required fields
