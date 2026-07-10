@@ -49,9 +49,7 @@ This project implements a unique **"Midnight Liquid Glass"** aesthetic, focusing
     cp .env.example .env
     ```
     Add your environment variables:
-    ```env
-  -->
-    ```
+    ```env''''
 
 4.  **Run the development server**
     ```bash
@@ -91,11 +89,6 @@ pnpm run test:watch
 
     ```
 4.  Deploy automatically.
-
-### Other Platforms
--   **Netlify**: Static site deployment with form handling.
--   **AWS Amplify**: Full-stack deployment with API integration.
--   **GitHub Pages**: Static deployment (limited functionality).
 
 ## 📂 Project Structure
 
